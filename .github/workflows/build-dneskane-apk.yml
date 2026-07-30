@@ -3,7 +3,9 @@ name: Build DneskaNe APK
 on:
   workflow_dispatch:
   push:
-    branches: [ "android-dneskane" ]
+    branches: [ "android-dneskane", "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 permissions:
   contents: read
@@ -17,6 +19,7 @@ jobs:
 
       - name: Extract Android project
         run: |
+          rm -rf DneskaNe
           unzip -q DneskaNe-source.zip
           ls -la DneskaNe
 
