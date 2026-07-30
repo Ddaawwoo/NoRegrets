@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DneskaNe</string>
+    <string name="call_redirection_service_label">Blokování hovorů DneskaNe</string>
+</resources>
